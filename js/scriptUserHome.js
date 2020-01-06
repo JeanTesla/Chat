@@ -24,9 +24,6 @@ $(document).ready(function(){
 });
 
 
-
-
-
 function verConversa(infoAmigo){
         $('#modal_mensagens').modal('show');
         let myInterval = setInterval(() => {
@@ -62,12 +59,6 @@ function verConversa(infoAmigo){
                 });
         }, 1500);
     }
-    
-
-
-
-
-
 
 $('#button_enviarMensagem').click(function(){
     if($('#inputHidden_codUsuario_destino').val() != '') sendMessage();
