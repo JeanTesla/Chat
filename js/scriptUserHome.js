@@ -131,6 +131,23 @@ function confirmarNovaAmizade(obj){
     });
 }
 
+function FuncaoTeste(obj){
+    $.ajax({
+        url:'classes/UserHome.php',
+        type: 'post',dataType:'json',data: {method:'confirmarNovaAmizade',methodParam:obj},
+        beforeSend: function () {   
+        },
+        success:function(r){
+            console.log(r);
+            $('#modal_novaAmizade').modal('hide');
+        },
+        error:function(r){
+            console.log(r);
+        }
+    });
+}
+
+
 
 
 
